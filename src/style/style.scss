@@ -1,5 +1,6 @@
 $text-dark:rgba(0, 0, 0, 0.779);
 $text-secondry:gray;
+$text-third:rgba(128, 128, 128, 0.388);
 .card{
     // border:1px solid lightgray;
 
@@ -19,6 +20,8 @@ $text-secondry:gray;
             margin: 0;
             img{
                 border-radius:5px;
+                width:136px;
+                height:136px;
             }
         }
     }
@@ -37,4 +40,45 @@ $text-secondry:gray;
             color:$text-secondry;
         }
     }
+}
+.cardList{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:15px;
+}
+a{
+    text-decoration: none;
+}
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    .right_side{
+        display: flex;
+        justify-content:space-evenly;
+        align-items: center;
+        width:60%;
+    }
+    .left_side{
+        display: flex;
+        justify-content:space-evenly;
+        align-items: center;
+        width:40%;
+    }
+    .input_search input[type=text]{
+        width:150%;
+        height:150%;
+        border-radius:2px;
+        background-color: $text-third;
+    }
+    .btn-advertisment{
+        background-color:#a62626;
+        border-radius:6px;
+        padding:12px;
+    }
+    .link-advertisment{
+        color: white;
+        font-weight:700;
+    }
+
 }

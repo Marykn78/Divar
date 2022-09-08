@@ -16,6 +16,8 @@
 }
 
 .card .card__body figure img {
+  width: 136px;
+  height: 136px;
   border-radius: 5px;
 }
 
@@ -36,6 +38,54 @@
 
 .card .card__details .card__auther {
   color: gray;
+}
+
+.cardList {
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+  display: grid;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.navbar .right_side {
+  width: 60%;
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+}
+
+.navbar .left_side {
+  width: 40%;
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+}
+
+.navbar .input_search input[type="text"] {
+  width: 150%;
+  height: 150%;
+  background-color: #80808063;
+  border-radius: 2px;
+}
+
+.navbar .btn-advertisment {
+  background-color: #a62626;
+  border-radius: 6px;
+  padding: 12px;
+}
+
+.navbar .link-advertisment {
+  color: #fff;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=index.08963856.css.map */
