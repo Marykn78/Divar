@@ -1,0 +1,41 @@
+.card {
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+}
+
+.card .card__body {
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding: 5px;
+  display: flex;
+}
+
+.card .card__body figure {
+  margin: 0;
+  padding: 0;
+}
+
+.card .card__body figure img {
+  border-radius: 5px;
+}
+
+.card .card__details {
+  flex-direction: column;
+  display: flex;
+}
+
+.card .card__details .card__title {
+  flex-wrap: 1;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card .card__details .card__price {
+  color: #000000c7;
+}
+
+.card .card__details .card__auther {
+  color: gray;
+}
+
+/*# sourceMappingURL=index.08963856.css.map */
