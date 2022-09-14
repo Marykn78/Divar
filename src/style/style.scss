@@ -23,8 +23,6 @@ $font-size-small:12px;
 }
 
 .card{
-    // border:1px solid lightgray;
-
     border: {
         radius:5px;
         width: 1px;
@@ -49,23 +47,44 @@ $font-size-small:12px;
     .card__details{
         display: flex;
         flex-direction: column;
+        // font-family:yekan;
         .card__title{
             flex-wrap:1;
-            font-size:18px;
+            font-size:$font-size-medium;
             font-weight:600;
+            font-family: yekan;
         }
         .card__price{
-            color:$text-dark;
+            padding-top:70px;
+            color:$text-first;
+            padding-bottom:5px;
         }
         .card__auther{
             color:$text-secondry;
+            font-size: $font-size-small;
         }
     }
 }
 .cardList{
+    width:70%;
+    border-top: 1px solid rgba(0, 0, 0, 0.193);
+    padding-top:10px;
+    position: relative;
+    top:80px;
+    right:400px;
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap:15px;
+}
+.description_topcard{
+    position:absolute;
+    left:70px;
+    top:110px;
+    display: flex;
+    justify-content: flex-end;
+    width:50%;
+    font-size:$font-size-small;
+    color:$text-first;
 }
 a{
     text-decoration: none;
@@ -80,16 +99,9 @@ a{
     color: $text-first;
     .right_side{
         display: flex;
-        // justify-content:flex-start;
         align-items: center;
         width:60%;
         @extend %margin-right;
-        // .logo{
-        //     @extend %margin-right;
-        // }
-        // .location{
-        //     @extend %margin-right;
-        // }
         .category, .location, .logo{
             @extend %margin-right;
             display: flex;
@@ -136,16 +148,13 @@ ul{
 }
 .border-bottom{
     border-bottom: 1px solid rgba(0, 0, 0, 0.297);
-    // margin-top: 10px;
 }
 .sidebar{
     width:20%;
-    // background-color: aqua; 
     position: fixed;
     top:60px;
     padding-top:25px;
     .sidebar__firstsection{
-        // padding-bottom: 20px;
         h5{
             padding:12px 50px;
             color: $text-first;
