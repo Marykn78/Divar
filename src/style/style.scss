@@ -1,6 +1,25 @@
 $text-dark:rgba(0, 0, 0, 0.779);
+$text-first:rgba(0,0,0,.56);
 $text-secondry:gray;
 $text-third:rgba(128, 128, 128, 0.388);
+$font-size-medium:14px;
+%margin-right{
+    margin-right:38px;
+}
+@font-face {
+    font-family:yekan;
+    src: url(../../assets/fonts/iranyekanwebregular.woff2);
+}
+*{
+    margin:0;
+    padding: o;
+    box-sizing: border-box;
+    font-family:yekan;
+}
+.fontAwesome {
+    font-family: yekan, 'FontAwesome';
+}
+
 .card{
     // border:1px solid lightgray;
 
@@ -50,35 +69,63 @@ a{
     text-decoration: none;
 }
 .navbar{
+    font-size: $font-size-medium;
     display:flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
+    height:60px;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 12%);
+    color: $text-first;
     .right_side{
         display: flex;
-        justify-content:space-evenly;
+        // justify-content:flex-start;
         align-items: center;
         width:60%;
+        @extend %margin-right;
+        // .logo{
+        //     @extend %margin-right;
+        // }
+        // .location{
+        //     @extend %margin-right;
+        // }
+        .category, .location, .logo{
+            @extend %margin-right;
+            display: flex;
+            align-items: center;
+        }
+        .input_search{
+            @extend %margin-right;
+        }
+        .location_link{
+            color:$text-first;
+        }
+        .input_search input[type=text]{
+            width:450px;
+            padding:10px;
+            border-radius:3px;
+            background-color: rgba(220, 220, 220, 0.307);
+            border: none;
+            color: $text-first;
+        }
     }
     .left_side{
         display: flex;
         justify-content:space-evenly;
         align-items: center;
-        width:40%;
-    }
-    .input_search input[type=text]{
-        width:150%;
-        height:150%;
-        border-radius:2px;
-        background-color: $text-third;
-    }
-    .btn-advertisment{
-        background-color:#a62626;
-        border-radius:6px;
-        padding:12px;
-    }
-    .link-advertisment{
-        color: white;
-        font-weight:700;
-    }
-
+        width:30%;
+        .divarman, .chat, .support{
+            display: flex;
+            align-items: center;
+        }
+        .btn-advertisment{
+            background-color:#a62626;
+            border-radius:6px;
+            padding:12px;
+            font-size:12px;
+            .link-advertisment{
+                color: white;
+                font-weight:700;
+            }
+        }
+    }   
 }
